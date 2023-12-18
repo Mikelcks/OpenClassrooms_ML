@@ -11,7 +11,6 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
         integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="./css/style.css">
 </head>
 
 <body>
@@ -27,11 +26,17 @@
         </header>
         <main>
             <div class="description">
-                <h2 class="description_title">Trouvez votre hébèrgement pour des vacances de rêve</h2>
-                <span class="description_subtitle">En plein centre-ville ou en pleine nature</span>
+                <h1 class="description_title">Trouvez votre hébèrgement pour des vacances de rêve</h1>
+                <p class="description_subtitle">En plein centre-ville ou en pleine nature</p>
             </div>
             <div class="recherche">
-                <p><strong>Créer bouton recherche</strong></p>
+                <form id="search_form">
+                    <div>
+                        <img src="images/icon/Vector.png" alt="icone position" id="search_icon">
+                    </div>
+                    <input type="text" id="search_input" placeholder="Rechercher...">
+                    <button id="search_button"><a href="#">Rechercher</a></button>
+                </form>
             </div>
             <div class="filters">
                 <span>Filtres</span>
@@ -165,7 +170,7 @@
                         </a>
                     </div>
                     <div class="hebergements-plus">
-                        <h3 class="card-subtitle"><a href="#">Afficher Plus</a></h3>                       
+                        <p class="afficher-plus"><a href="#">Afficher Plus</a></p>                       
                     </div>
                 </section>
                 <section class="populaires">
@@ -286,19 +291,19 @@
             </div>
         </main>
         <footer>
-            <div class="footer_a_propos">
-                <h3 class="footer_title">À propos</h3>
+            <div class="colonne">
+                <h2 class="footer_title">À propos</h2>
                 <p><a href="#">Fonctionnement du site</a></p>
                 <p><a href="#">Conditions générales</a></p>
                 <p><a href="#">Données et confidentialité</a></p>
             </div>
-            <div class="footer_nos_herbergements">
-                <h3 class="footer_title">Nos hébergements</h3>
+            <div class="colonne">
+                <h2 class="footer_title">Nos hébergements</h2>
                 <p><a href="#">Charte qualité</a></p>
                 <p><a href="#">Proposer votre hôtel</a></p>
             </div>
-            <div class="footer_assistance">
-                <h3 class="footer_title">Assistance</h3>
+            <div class="colonne">
+                <h2 class="footer_title">Assistance</h2>
                 <p><a href="#">Centre d'aide</a></p>
                 <p><a href="#">Nous contacter</a></p>
             </div>
